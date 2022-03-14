@@ -1,0 +1,33 @@
+.profileImage {
+  border-radius: 0%;
+}
+
+.profile-div {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+.profile-main-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 97%;
+  flex-direction: row;
+  margin: 30px 1.5%;
+  background-color: aquamarine;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+.profile-main-div-name {
+  width: 50%;
+  display: flex;
+  padding-left: 20px;
+}
+.profile-main-div-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5vw;
+}
