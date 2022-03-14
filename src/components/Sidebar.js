@@ -145,9 +145,7 @@ export default function SideBar() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Typography paragraph>
-          <PersonDetails />
-        </Typography>
+        <Typography paragraph></Typography>
       </Main>
     </Box>
   );
