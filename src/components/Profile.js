@@ -22,6 +22,10 @@ export default function Profile() {
             />
           </div>
         </div>
+        <div className="profile-main">
+          <div className="profile-main-desc">sakhjfisald</div>
+          <div className="profile-main-info">fsvvvvvvvvvvvvvvvvvvvvv</div>
+        </div>
       </div>
     </div>
   );

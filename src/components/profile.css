@@ -1,11 +1,12 @@
 .profileImage {
-  border-radius: 0%;
+  border-radius: 2rem;
 }
 
 .profile-div {
   position: absolute;
   top: 50px;
   width: 100%;
+
   background-color: antiquewhite;
 }
 .profile-main-div {
@@ -13,12 +14,12 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 97%;
+  border-radius: 2rem;
   flex-direction: row;
   margin: 30px 1.5%;
   background-color: aquamarine;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-right: 10px;
 }
 .profile-main-div-name {
   width: 50%;
@@ -30,4 +31,21 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 5vw;
+}
+.profile-main {
+  background-color: aquamarine;
+  display: flex;
+  margin: 30px 1.5%;
+  justify-content: space-between;
+}
+.profile-main-desc {
+  width: 55%;
+  border-radius: 2rem;
+
+  background-color: pink;
+}
+.profile-main-info {
+  width: 40%;
+  border-radius: 2rem;
+  background-color: blueviolet;
 }
