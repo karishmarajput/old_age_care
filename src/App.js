@@ -3,7 +3,7 @@ import './style.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Profile from './components/Profile.js';
 import Dashboard from './components/Dashboard.js';
-
+import Main from './Main.js';
 export default function App() {
   return (
     <BrowserRouter>
