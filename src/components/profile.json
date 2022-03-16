@@ -23,7 +23,66 @@
       ],
       "prescription": [
         {
-          
+          "id": 1,
+          "date": "23/02/2022",
+          "doctorName": "john ",
+          "img": "https://image.shutterstock.com/image-illustration/filled-medical-prescription-isolated-on-260nw-144551783.jpg"
+        },
+        {
+          "id": 2,
+          "date": "23/02/2022",
+          "doctorName": "john ",
+          "img": "https://image.shutterstock.com/image-illustration/filled-medical-prescription-isolated-on-260nw-144551783.jpg"
+        },
+        {
+          "id": 3,
+          "date": "23/02/2022",
+          "doctorName": "john ",
+          "img": "https://image.shutterstock.com/image-illustration/filled-medical-prescription-isolated-on-260nw-144551783.jpg"
+        }
+      ],
+      "allergies": [
+        {
+          "id": 1,
+          "name": "abc",
+          "desc": "ajhadkjudaksisioasu"
+        },
+        {
+          "id": 2,
+          "name": "xyz",
+          "desc": "sisioasu"
+        },
+        {
+          "id": 3,
+          "name": "aamj",
+          "desc": "ajhadkjudaksisioasu"
+        }
+      ],
+      "doctorsComment": "healthy"
+    },
+    {
+      "id": 2,
+      "img": "https://media.istockphoto.com/photos/cheerful-senior-man-picture-id153011771?k=20&m=153011771&s=612x612&w=0&h=vBUDBf5sjvvgoWn-2aeZaHb6E5iDg-yVBLOa2PruOSk=",
+      "name": "John",
+      "dob": "10/04/1956",
+      "bloodGroup": "A+",
+      "familyNumber": "123456789",
+      "medicineIntake": [
+        {
+          "id": 123,
+          "name": "medA"
+        },
+        {
+          "id": 1223,
+          "name": "medB"
+        },
+        {
+          "id": 23,
+          "name": "medC"
+        }
+      ],
+      "prescription": [
+        {
           "id": 1,
           "date": "23/02/2022",
           "doctorName": "john ",

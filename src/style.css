@@ -2,3 +2,10 @@ h1,
 p {
   font-family: Lato;
 }
+body {
+  background-color: #f4fcd9;
+}
+.MuiPaper-root {
+  background-color: #bb9981;
+  color: white;
+}

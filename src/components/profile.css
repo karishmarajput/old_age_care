@@ -1,10 +1,7 @@
 .profileImage {
   border-radius: 2rem;
 }
-.MuiPaper-root {
-  background-color: #bb9981;
-  color: white;
-}
+
 .profile-div {
   position: absolute;
   top: 50px;
