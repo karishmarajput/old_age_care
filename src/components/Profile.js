@@ -5,6 +5,9 @@ import './profile.css';
 export default function Profile() {
   data = data.profile[0];
   console.log(data.img);
+  const medicineIntake = data.medicineIntake.map((medicineIntake) => {
+    return <li>{medicineIntake.name}</li>;
+  });
   return (
     <div>
       <ResponsiveDrawer />
@@ -23,8 +26,22 @@ export default function Profile() {
           </div>
         </div>
         <div className="profile-main">
-          <div className="profile-main-desc">sakhjfisald</div>
-          <div className="profile-main-info">fsvvvvvvvvvvvvvvvvvvvvv</div>
+          <div className="profile-main-desc">
+            Medicine Intake:<ul> {medicineIntake} </ul>
+            Prescription:
+          </div>
+          <div className="profile-main-info">
+            Name: {data.name}
+            <br />
+            D.O.B: {data.dob}
+            <br />
+            Family Number: {data.familyNumber}
+            <br />
+            bloodGroup: {data.bloodGroup}
+            <br />
+            doctorsComment: {data.doctorsComment}
+            <br />
+          </div>
         </div>
       </div>
     </div>

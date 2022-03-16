@@ -40,11 +40,29 @@
 .profile-main-desc {
   width: 55%;
   border-radius: 2rem;
-
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
   background-color: pink;
 }
 .profile-main-info {
   width: 40%;
   border-radius: 2rem;
+  display: flex;
+  padding: 1.5rem;
   background-color: blueviolet;
+}
+@media only screen and (max-width: 600px) {
+  .profile-main-div,
+  .profile-main {
+    flex-direction: column;
+  }
+
+  .profile-main-div-name,
+  .profile-main-div-image,
+  .profile-main-desc,
+  .profile-main-info {
+    width: 100%;
+    justify-content: center;
+  }
 }
