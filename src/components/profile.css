@@ -1,13 +1,16 @@
 .profileImage {
   border-radius: 2rem;
 }
-
+.MuiPaper-root {
+  background-color: #bb9981;
+  color: white;
+}
 .profile-div {
   position: absolute;
   top: 50px;
   width: 100%;
 
-  background-color: antiquewhite;
+  background-color: #f4fcd9;
 }
 .profile-main-div {
   display: flex;
@@ -17,7 +20,7 @@
   border-radius: 2rem;
   flex-direction: row;
   margin: 30px 1.5%;
-  background-color: aquamarine;
+  background-color: #c5d8a4;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -43,25 +46,49 @@
   display: flex;
   padding: 1.5rem;
   flex-direction: column;
-  background-color: pink;
+  background-color: #c5d8a4;
 }
 .profile-main-info {
   width: 40%;
+  font-size: 1.3rem;
   border-radius: 2rem;
   display: flex;
   padding: 1.5rem;
-  background-color: blueviolet;
+  background-color: #c5d8a4;
 }
 .downloadPara {
- 
   font-size: 18px;
 }
 details[open] summary ~ * {
-  animation: sweep .5s ease-in-out;
+  animation: sweep 0.5s ease-in-out;
 }
 @keyframes sweep {
-  0%    {opacity: 0; margin-top: -10px}
-  100%  {opacity: 1; margin-top: 0px}
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fcfcfc;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 @media only screen and (max-width: 600px) {
   .profile-main-div,

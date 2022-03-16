@@ -5,7 +5,6 @@ import './profile.css';
 import DownloadIcon from '@mui/icons-material/Download';
 export default function Profile() {
   data = data.profile[0];
-  console.log(data.img);
   const medicineIntake = data.medicineIntake.map((medicineIntake) => {
     return <li>{medicineIntake.name}</li>;
   });
@@ -39,14 +38,15 @@ export default function Profile() {
   };
   const prescription = data.prescription.map((prescription) => {
     return (
-      <details>
-        <summary>{prescription.date}</summary>
-        <p className="downloadPara">
+      <tr>
+        <td>{prescription.date}</td>
+        <td>{prescription.doctorName} </td>
+        <td>
           <a href={prescription.img} download onClick={(e) => download(e)}>
-            {prescription.doctorName} <DownloadIcon /> Download
+            <DownloadIcon /> Download
           </a>
-        </p>
-      </details>
+        </td>
+      </tr>
     );
   });
   return (
@@ -69,7 +69,18 @@ export default function Profile() {
         <div className="profile-main">
           <div className="profile-main-desc">
             Medicine Intake:<ul> {medicineIntake} </ul>
-            Prescription: {prescription}
+            Prescription:{' '}
+            <table>
+              <tbody>
+                <tr>
+                  <th>Date</th>
+                  <th>Doctor's Name</th>
+                  <th>Prescription</th>
+                </tr>
+                {prescription}
+              </tbody>
+            </table>
+            <br />
             Allergies: {allergies}
           </div>
           <div className="profile-main-info">
@@ -81,7 +92,7 @@ export default function Profile() {
             <br />
             bloodGroup: {data.bloodGroup}
             <br />
-            doctorsComment: {data.doctorsComment}
+            Doctor's Comment: {data.doctorsComment}
             <br />
           </div>
         </div>
