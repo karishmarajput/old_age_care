@@ -83,6 +83,7 @@ export default function Profile() {
             <br />
             Allergies: {allergies}
           </div>
+          <br />
           <div className="profile-main-info">
             Name: {data.name}
             <br />
@@ -95,6 +96,7 @@ export default function Profile() {
             Doctor's Comment: {data.doctorsComment}
             <br />
           </div>
+          <br />
         </div>
       </div>
     </div>
