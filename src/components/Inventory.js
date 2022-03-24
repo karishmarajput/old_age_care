@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useTable, usePagination } from 'react-table';
-
-import makeData from './makeData';
+import ResponsiveDrawer from './Sidebar.js';
 import data from './inventoryData.json';
 const Styles = styled.div`
   padding: 1rem;
@@ -10,7 +9,6 @@ const Styles = styled.div`
   table {
     border-spacing: 0;
     border: 1px solid black;
-
     tr {
       :last-child {
         td {
@@ -143,6 +141,7 @@ function Table({ columns, data, updateMyData, skipPageReset }) {
         </tbody>
       </table>
       <div className="pagination">
+        <div>
         <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
         </button>{' '}
@@ -155,6 +154,8 @@ function Table({ columns, data, updateMyData, skipPageReset }) {
         <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
           {'>>'}
         </button>{' '}
+        </div>
+        <br />
         <span>
           Page{' '}
           <strong>
@@ -162,7 +163,8 @@ function Table({ columns, data, updateMyData, skipPageReset }) {
           </strong>{' '}
         </span>
         <span>
-          | Go to page:{' '}
+          <br />
+          Go to page:{' '}
           <input
             type="number"
             defaultValue={pageIndex + 1}
@@ -262,15 +264,19 @@ function Inventory() {
   console.log(data);
 
   return (
-    <Styles>
-      <button onClick={resetData}>Reset Data</button>
-      <Table
-        columns={columns}
-        data={data}
-        updateMyData={updateMyData}
-        skipPageReset={skipPageReset}
-      />
-    </Styles>
+    <div>
+      <ResponsiveDrawer />
+      <h1>Inventory</h1>
+      <Styles>
+        <Table
+          columns={columns}
+          data={data}
+          updateMyData={updateMyData}
+          skipPageReset={skipPageReset}
+        />
+        <button onClick={resetData}>Reset Data</button>
+      </Styles>
+    </div>
   );
 }
 
