@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "itemid": 1,
+      "itemname": "abc",
+      "quantity": "10kg",
+      "price": 100
+    },
+    {
+      "itemid": 2,
+      "itemname": "xyz",
+      "quantity": "1kg",
+      "price": 1000
+    },
+    {
+      "itemid": 3,
+      "itemname": "abced",
+      "quantity": "30kg",
+      "price": 200
+    },
+    {
+      "itemid": 4,
+      "itemname": "abc",
+      "quantity": "10kg",
+      "price": 130
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useTable, usePagination } from 'react-table';
 
 import makeData from './makeData';
-
+import data from './inventoryData.json';
 const Styles = styled.div`
   padding: 1rem;
 
@@ -43,7 +43,8 @@ const Styles = styled.div`
     padding: 0.5rem;
   }
 `;
-
+let newdata = data.data;
+console.log(data);
 // Create an editable cell renderer
 const EditableCell = ({
   value: initialValue,
@@ -193,15 +194,15 @@ function Inventory() {
   const columns = React.useMemo(
     () => [
       {
-        Header: 'Name',
+        Header: 'Item',
         columns: [
           {
-            Header: 'First Name',
-            accessor: 'firstName',
+            Header: 'Item Id',
+            accessor: 'itemid',
           },
           {
-            Header: 'Last Name',
-            accessor: 'lastName',
+            Header: 'Item Name',
+            accessor: 'itemname',
           },
         ],
       },
@@ -209,20 +210,12 @@ function Inventory() {
         Header: 'Info',
         columns: [
           {
-            Header: 'Age',
-            accessor: 'age',
+            Header: 'Quantity',
+            accessor: 'quantity',
           },
           {
-            Header: 'Visits',
-            accessor: 'visits',
-          },
-          {
-            Header: 'Status',
-            accessor: 'status',
-          },
-          {
-            Header: 'Profile Progress',
-            accessor: 'progress',
+            Header: 'Price',
+            accessor: 'price',
           },
         ],
       },
@@ -230,7 +223,7 @@ function Inventory() {
     []
   );
 
-  const [data, setData] = React.useState(() => makeData(20));
+  const [data, setData] = React.useState(() => newdata);
   const [originalData] = React.useState(data);
   const [skipPageReset, setSkipPageReset] = React.useState(false);
 
@@ -266,6 +259,7 @@ function Inventory() {
   // Let's add a data resetter/randomizer to help
   // illustrate that flow...
   const resetData = () => setData(originalData);
+  console.log(data);
 
   return (
     <Styles>
