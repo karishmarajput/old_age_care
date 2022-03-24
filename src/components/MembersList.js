@@ -14,8 +14,9 @@ export default function MembersList() {
     );
   });
   return (
-    <div>
+    <div className="membersList">
       <ResponsiveDrawer />
+      <h1>Member's List</h1>
       <table>
         <tbody>
           <tr>

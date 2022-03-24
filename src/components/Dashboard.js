@@ -10,13 +10,15 @@ export default function Dashboard() {
       <h1>Dashboard</h1>
       <div className="container">
         <div className="dashboard-div" id="div1">
-          Number of : 21,200
+          Number of :<br /> 21,200
         </div>
         <div className="dashboard-div" id="div2">
-          Staff: 1,500
+          Staff: <br />
+          1,500
         </div>
         <div className="dashboard-div" id="div3">
-          Staff: 1,500
+          Staff: <br />
+          1,500
         </div>
       </div>
       <div className="container">

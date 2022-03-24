@@ -3,9 +3,9 @@ p {
   font-family: Lato;
 }
 body {
-  background-color: #f4fcd9;
+  background-color: #ffffff;
 }
 .MuiToolbar-root {
-  background-color: #bb9981;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
