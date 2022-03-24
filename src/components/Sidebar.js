@@ -20,6 +20,10 @@ import MailIcon from '@mui/icons-material/Mail';
 import PersonDetails from './PersonDetails';
 const drawerWidth = 240;
 
+function click() {
+  console.log('hello');
+}
+
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
     flexGrow: 1,
@@ -134,7 +138,7 @@ export default function SideBar() {
         <Divider />
         <List>
           {['Logout'].map((text, index) => (
-            <ListItem button key={text}>
+            <ListItem button key={text} onclick={click()}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
